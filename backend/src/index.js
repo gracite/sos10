@@ -5,7 +5,8 @@ const routes = require('./routes');
 const app = express();
 
 mongoose.connect('mongodb+srv://omni:omni@cluster0-jeplf.mongodb.net/sos10?retryWrites=true&w=majority',{
-    useNewUrlParser: true, useUnifiedTopology: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 })
 
 app.use(express.json());
